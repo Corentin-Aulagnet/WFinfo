@@ -186,6 +186,7 @@ namespace WFInfo.Settings
             Save();
 
             _ = OCR.updateEngineAsync();
+
             _ = Task.Run(async () =>
             {
                 Main.dataBase.ReloadItems();
